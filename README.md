@@ -1,4 +1,4 @@
 # lucky-pet-website 
 
-![My image]([http://url/to/image.jpg](https://i.pinimg.com/564x/76/45/23/764523adf76c545aa951eb974d7d7861.jpg)
+![](https://i.pinimg.com/564x/af/bb/b5/afbbb5a481b499c655a752000770ab5e.jpg)
 
