@@ -24,6 +24,6 @@ any discomfort so they really concerned about their welfare that is the most imp
   5. Tips and instructions about raising pets
 
 - ## Class Diagram
-![](https://github.com/myhopesx/lucky-pet-website/blob/main/Lucky%20Pet%20UML%20(1).png)
+![](https://github.com/myhopesx/lucky-pet-website/blob/main/Lucky%20Pet%20UML.png)
 
 
