@@ -1,0 +1,1326 @@
+{
+	"info": {
+		"_postman_id": "8c663134-fdbd-4f9f-bc83-4f4d5449fd10",
+		"name": "lucky-pet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15493373"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "add-admin1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"AmaalAdmin@gmail.com\",\r\n    \"phoneNumber\":\"0559576666\",\r\n    \"password\":\"12345\",\r\n    \"name\":\"Amaal Ahmed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/admin/signup",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"admin",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "add-customer1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"Amaal@gmail.com\",\r\n    \"phoneNumber\":\"0559571111\",\r\n    \"password\":\"12345\",\r\n    \"name\":\"Amaal Ahmed\",\r\n    \"age\":\"22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/customer/signup",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"customer",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-customer2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"Ali@gmail.com\",\r\n    \"phoneNumber\":\"0559571112\",\r\n    \"password\":\"12345\",\r\n    \"name\":\"Ali Ahmed\",\r\n    \"age\":\"22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/customer/signup",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"customer",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-customer3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"rema@gmail.com\",\r\n    \"phoneNumber\":\"0559572222\",\r\n    \"password\":\"12345\",\r\n    \"name\":\"rema ali\",\r\n    \"age\":\"18\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/customer/signup",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"customer",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-customer4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"Fahad@gmail.com\",\r\n    \"phoneNumber\":\"0559533333\",\r\n    \"password\":\"11778899988\",\r\n    \"name\":\"Fahad Ali\",\r\n    \"age\":\"26\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/customer/signup",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"customer",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-customer5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"zhraa@gmail.com\",\r\n    \"phoneNumber\":\"0533333222\",\r\n    \"password\":\"77766612\",\r\n    \"name\":\"zhraa fahad\",\r\n    \"age\":\"30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/customer/signup",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"customer",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-customers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "AmaalAdmin@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api}}/customer/all",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"customer",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-customer-2-by-id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "ali@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/customer/14",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"customer",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-customer1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Amaal@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":34,\r\n    \"email\":\"Amaal@gmail.com\",\r\n    \"phoneNumber\":\"0559576666\",\r\n    \"password\":\"12345\",\r\n    \"name\":\"Amaal Ahmed\",\r\n    \"age\":\"18\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/customer/profile",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"customer",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-customer1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Amaal@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/customer/profile/34",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"customer",
+								"profile",
+								"34"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pet",
+			"item": [
+				{
+					"name": "add-pet-for-customer1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Amaal@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\":\"cat\",\r\n    \"age\":12,\r\n    \"description\":\"sherazi-cat\",\r\n    \"status\":\"owned\",\r\n    \"image\":\"image for the cat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/pet/customer/34",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"pet",
+								"customer",
+								"34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-pet2-for-customer2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Ali@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\":\"dog\",\r\n    \"age\":12,\r\n    \"description\":\"big-dog\",\r\n    \"status\":\"owned\",\r\n    \"image\":\"image for the dog\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/pet/customer/14",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"pet",
+								"customer",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-pets",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "AmaalAdmin@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/pet/all",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"pet",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updat-pet2-for-customer2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Ali@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"type\":\"dog\",\r\n    \"age\":12,\r\n    \"description\":\"small-dog\",\r\n    \"status\":\"lost\",\r\n    \"image\":\"image for the small dog\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/pet",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-pet2-for-customer2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Ali@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"type\":\"dog\",\r\n    \"age\":12,\r\n    \"description\":\"big-dog\",\r\n    \"image\":\"image for the dog\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/pet/2/2",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"pet",
+								"2",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clinic-owner",
+			"item": [
+				{
+					"name": "add-clinic-owner1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"Amaalclinic@gmail.com\",\r\n    \"phoneNumber\":\"0559576666\",\r\n    \"password\":\"12345\",\r\n    \"name\":\"Amaal Ahmed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/clinic-owner/signup",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"clinic-owner",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-clinic-owner2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"AliClinic@gmail.com\",\r\n    \"phoneNumber\":\"0559571111\",\r\n    \"password\":\"12345\",\r\n    \"name\":\"Ali c Ahmed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/clinic-owner/signup",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"clinic-owner",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-clinic-owner",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "AmaalAdmin@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/clinic-owner/all",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"clinic-owner",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-clinic-owner-by-id",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Amaalclinic@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/clinic-owner/4",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"clinic-owner",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-clinic-owner1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "amaalclinic@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":4,\r\n    \"email\":\"Amaalclinic@gmail.com\",\r\n    \"phoneNumber\":\"0559576466\",\r\n    \"password\":\"12345\",\r\n    \"name\":\"Amaal Ahmed Alzhrani\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/clinic-owner/profile",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"clinic-owner",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-clinic-owner1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/clinic-owner/14",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"clinic-owner",
+								"14"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pet-clinic",
+			"item": [
+				{
+					"name": "add-clinic-to-owner1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Amaalclinic@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"hello pets\",\r\n    \"address\":\"Alared\",\r\n    \"startTime\":\"12:00:00\",\r\n    \"endTime\":\"23:00:00\",\r\n    \"description\":\"clinics for pet\",\r\n    \"isActive\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/pet-clinic/4",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"pet-clinic",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-clinic-to-owner2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "AliClinic@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"hello pets\",\r\n    \"address\":\"Alared\",\r\n    \"startTime\":\"12:00:00\",\r\n    \"endTime\":\"23:00:00\",\r\n    \"description\":\"clinics for pet\",\r\n    \"isActive\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/pet-clinic/2",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"pet-clinic",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-pet-clinic",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/pet-clinic/all",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"pet-clinic",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-clinic-to-owner1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"hello pets\",\r\n    \"address\":\"Alared\",\r\n    \"startTime\":\"12:00:00\",\r\n    \"endTime\":\"23:00:00\",\r\n    \"description\":\"clinics for pet\",\r\n    \"isActive\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/pet-clinic",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"pet-clinic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-clinic-to-owner1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/pet-clinic/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"pet-clinic",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "appointment",
+			"item": [
+				{
+					"name": "add-appointment-for-customer1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Amaal@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"2022-06-11\",\r\n    \"time\":\"12:00:00\",\r\n    \"price\":250,\r\n    \"appointmentType\":\"inoculation\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/appointment/customer/34/4",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"appointment",
+								"customer",
+								"34",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-appointment-for-customer2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Ali@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"2022-06-20\",\r\n    \"time\":\"12:00:00\",\r\n    \"price\":250,\r\n    \"appointmentType\":\"inoculation\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/appointment/customer/2/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"appointment",
+								"customer",
+								"2",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-appointment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "AmaalAdmin@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/appointment/all",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"appointment",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-appointment-for-clinic-1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "amaalclinic@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/appointment/clinic-owner/4",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"appointment",
+								"clinic-owner",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-appointment-for-customer-1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Amaal@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/appointment/customer/34",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"appointment",
+								"customer",
+								"34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-appointment-for-customer1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Amaal@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"2022-02-12\",\r\n    \"time\":\"12:00:00\",\r\n    \"price\":250,\r\n    \"appointmentType\":\"inoculation\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api}}/appointment/1/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"appointment",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "adoption",
+			"item": [
+				{
+					"name": "offer-pet-for-adopt1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Amaal@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/adaption/offered/1/1",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"adaption",
+								"offered",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "adopt-pet1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Amaal@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/adaption/adopt/1/1/14",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"adaption",
+								"adopt",
+								"1",
+								"1",
+								"14"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "lost-pets",
+			"item": [
+				{
+					"name": "add-lost-pet",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Amaal@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/lost-pet/lost/2/2",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"lost-pet",
+								"lost",
+								"2",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pet-found",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "Amaal@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/lost-pet/found/2/2",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"lost-pet",
+								"found",
+								"2",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": "https://lucky-pet.herokuapp.com/api/v1",
+			"type": "string"
+		}
+	]
+}
