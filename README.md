@@ -1,6 +1,6 @@
 # Lucky Pet Website
 
-![](https://i.pinimg.com/564x/af/bb/b5/afbbb5a481b499c655a752000770ab5e.jpg)
+   ![](https://i.pinimg.com/564x/0c/9a/34/0c9a340b1c19c954aa9a11ae701dc137.jpg)
 
 - ## Introduction
  
@@ -24,5 +24,6 @@ any discomfort so they really concerned about their welfare that is the most imp
   5. Tips and instructions about raising pets
 
 - ## Class Diagram
+![](https://github.com/myhopesx/lucky-pet-website/blob/main/Lucky%20Pet%20UML%20(1).png)
 
 
