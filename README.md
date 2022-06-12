@@ -28,5 +28,7 @@ any discomfort so they really concerned about their welfare that is the most imp
 
 - ## API Link 
 https://lucky-pet.herokuapp.com
+- ## postman documentation 
+https://documenter.getpostman.com/view/21096300/Uz5NjYSF
 
 
